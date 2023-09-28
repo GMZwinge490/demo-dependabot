@@ -5,11 +5,26 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      production-npm-dependencies:
+        dependency-type: "production"
+      development-npm-dependencies:
+        dependency-type: "development"
   - package-ecosystem: npm
-    directory: "/javascript"
+    directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      production-npm-dependencies:
+        dependency-type: "production"
+      development-npm-dependencies:
+        dependency-type: "development"
   - package-ecosystem: bundler
-    directory: "/ruby"
+    directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      production-npm-dependencies:
+        dependency-type: "production"
+      development-npm-dependencies:
+        dependency-type: "development"
